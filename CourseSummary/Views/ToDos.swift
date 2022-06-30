@@ -30,9 +30,9 @@ struct ToDos: View {
           toDo = response.value ?? []
         }
       }
-      .navigationBarTitle(Text("To Do List: \(toDo.count)")
+      .navigationBarTitle(Text("To Do List")
                           , displayMode: .inline)
-      .toolbar { NavigationLink("Add", destination: AddToDo())
+      .toolbar { Text("#\(toDo.count)")
       }
     }
   }

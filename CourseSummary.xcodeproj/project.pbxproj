@@ -13,7 +13,6 @@
 		03CC53AB286CB1A000613512 /* ToDos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC53AA286CB1A000613512 /* ToDos.swift */; };
 		03CC53AD286CB1B300613512 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC53AC286CB1B300613512 /* ToDo.swift */; };
 		03CC53B0286CB59400613512 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 03CC53AF286CB59400613512 /* Alamofire */; };
-		03CC53B2286DA32100613512 /* AddToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC53B1286DA32100613512 /* AddToDo.swift */; };
 		03DC7430286B199300277AB3 /* CourseSummaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC742F286B199300277AB3 /* CourseSummaryApp.swift */; };
 		03DC7432286B199300277AB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC7431286B199300277AB3 /* ContentView.swift */; };
 		03DC7434286B199600277AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DC7433286B199600277AB3 /* Assets.xcassets */; };
@@ -47,7 +46,6 @@
 		03CC53A8286C91A700613512 /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
 		03CC53AA286CB1A000613512 /* ToDos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDos.swift; sourceTree = "<group>"; };
 		03CC53AC286CB1B300613512 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
-		03CC53B1286DA32100613512 /* AddToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDo.swift; sourceTree = "<group>"; };
 		03DC742C286B199300277AB3 /* CourseSummary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseSummary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DC742F286B199300277AB3 /* CourseSummaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSummaryApp.swift; sourceTree = "<group>"; };
 		03DC7431286B199300277AB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				03CC53A4286C6E7000613512 /* ArrayForm.swift */,
 				03CC53A8286C91A700613512 /* UserList.swift */,
 				03CC53AA286CB1A000613512 /* ToDos.swift */,
-				03CC53B1286DA32100613512 /* AddToDo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,7 +306,6 @@
 				03CC53AB286CB1A000613512 /* ToDos.swift in Sources */,
 				03CC53A7286C90E800613512 /* User.swift in Sources */,
 				03CC53A9286C91A700613512 /* UserList.swift in Sources */,
-				03CC53B2286DA32100613512 /* AddToDo.swift in Sources */,
 				03DC7430286B199300277AB3 /* CourseSummaryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
