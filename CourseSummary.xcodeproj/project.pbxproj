@@ -24,6 +24,7 @@
 		03FCFEB3286EEC8E005BFD6D /* SupplierModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FCFEB2286EEC8E005BFD6D /* SupplierModel.swift */; };
 		03FCFEB5286EECA5005BFD6D /* Suppliers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FCFEB4286EECA5005BFD6D /* Suppliers.swift */; };
 		03FCFEB7286EED18005BFD6D /* AddSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FCFEB6286EED18005BFD6D /* AddSupplier.swift */; };
+		03FCFEB9286F10A1005BFD6D /* SupplierDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FCFEB8286F10A1005BFD6D /* SupplierDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		03FCFEB2286EEC8E005BFD6D /* SupplierModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplierModel.swift; sourceTree = "<group>"; };
 		03FCFEB4286EECA5005BFD6D /* Suppliers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suppliers.swift; sourceTree = "<group>"; };
 		03FCFEB6286EED18005BFD6D /* AddSupplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSupplier.swift; sourceTree = "<group>"; };
+		03FCFEB8286F10A1005BFD6D /* SupplierDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +158,7 @@
 				03CC53A4286C6E7000613512 /* ArrayForm.swift */,
 				03CC53A8286C91A700613512 /* UserList.swift */,
 				03CC53AA286CB1A000613512 /* ToDos.swift */,
-				03FCFEB4286EECA5005BFD6D /* Suppliers.swift */,
-				03FCFEB6286EED18005BFD6D /* AddSupplier.swift */,
+				03FCFEBA286F4754005BFD6D /* Suppliers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +171,16 @@
 				03FCFEB2286EEC8E005BFD6D /* SupplierModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		03FCFEBA286F4754005BFD6D /* Suppliers */ = {
+			isa = PBXGroup;
+			children = (
+				03FCFEB4286EECA5005BFD6D /* Suppliers.swift */,
+				03FCFEB6286EED18005BFD6D /* AddSupplier.swift */,
+				03FCFEB8286F10A1005BFD6D /* SupplierDetail.swift */,
+			);
+			path = Suppliers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +325,7 @@
 				03CC53A5286C6E7000613512 /* ArrayForm.swift in Sources */,
 				03DC7432286B199300277AB3 /* ContentView.swift in Sources */,
 				03CC53AD286CB1B300613512 /* ToDo.swift in Sources */,
+				03FCFEB9286F10A1005BFD6D /* SupplierDetail.swift in Sources */,
 				03CC53AB286CB1A000613512 /* ToDos.swift in Sources */,
 				03CC53A7286C90E800613512 /* User.swift in Sources */,
 				03FCFEB7286EED18005BFD6D /* AddSupplier.swift in Sources */,

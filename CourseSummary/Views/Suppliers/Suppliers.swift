@@ -18,37 +18,36 @@ struct Suppliers: View {
       VStack {
         List {
           ForEach(suppliers, id: \.self) { item in
-          Text(item.companyName)
-          Text(item.contactName)
-          Text(item.contactTitle ?? "")
-          }.onDelete(perform: delete)
-            .deleteDisabled(disableDelete)
-            
+            NavigationLink(destination: SupplierDetail(id: item.id)) {
+              Text(item.contactName)
+            }
+          }
         }
-        
       }.onAppear() {
         let request = AF.request("https://northwind.vercel.app/api/suppliers");
         request.responseDecodable(of: [SupplierModel].self) { response in
+          print("response is", response)
           suppliers = response.value ?? []
         }
       }
       .navigationBarTitle(Text("Products"), displayMode: .inline)
       .toolbar {
-        ToolbarItem { EditButton() }
+        ToolbarItem { NavigationLink("Add New", destination: AddSupplier()) }
       }
     }
   }
-  func delete(at indexes: IndexSet) {
-    if let first = indexes.first {
-      suppliers.remove(at: first)
-    }
-  }
-  var disableDelete: Bool {
-      if let mode = editMode?.wrappedValue, mode != .active {
-          return true
-      }
-      return false
-  }
+  
+  //  func delete(at indexes: IndexSet) {
+  //    if let first = indexes.first {
+  //      suppliers.remove(at: first)
+  //    }
+  //  }
+  //  var disableDelete: Bool {
+  //      if let mode = editMode?.wrappedValue, mode != .active {
+  //          return true
+  //      }
+  //      return false
+  //  }
 }
 
 struct Products_Previews: PreviewProvider {

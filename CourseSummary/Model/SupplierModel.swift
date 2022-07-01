@@ -8,7 +8,8 @@
 import Foundation
 
 struct SupplierModel: Codable, Hashable {
-    let id: Int
-    let companyName, contactName: String
-    let contactTitle: String?
+    var id: Int = 0
+    var companyName: String = ""
+    var contactName: String = ""
+    var contactTitle: String?
 }
