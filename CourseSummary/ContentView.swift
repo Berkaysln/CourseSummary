@@ -15,6 +15,7 @@ struct ContentView: View {
         NavigationLink("ArrayForm", destination: ArrayForm())
         NavigationLink("UserList", destination: UserList())
         NavigationLink("To-Do List", destination: ToDos())
+        NavigationLink("Suppliers", destination: Suppliers())
 
       }
     }
