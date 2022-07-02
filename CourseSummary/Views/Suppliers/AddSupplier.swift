@@ -14,15 +14,22 @@ struct AddSupplier: View {
   @State private var companyName: String = ""
   @State private var contactName: String = ""
   @State private var contactTitle: String = ""
-  
+  @Environment(\.presentationMode) var presentationMode
+
   var body: some View {
     
     ZStack {
       Form {
         Section("Supplier Information") {
           TextField("Company Name", text: $companyName)
+            .autocapitalization(.none)
+            .disableAutocorrection(true)
           TextField("Contact Name", text: $contactName)
+            .autocapitalization(.none)
+            .disableAutocorrection(true)
           TextField("Contact Title", text: $contactTitle)
+            .autocapitalization(.none)
+            .disableAutocorrection(true)
           RoundedRectangle(cornerRadius: .zero)
             .foregroundColor(.clear)
             .overlay( Button("Add New") {
@@ -33,6 +40,8 @@ struct AddSupplier: View {
               ]
               AF.request("https://northwind.vercel.app/api/suppliers", method: .post, parameters: newSupplier, encoding: JSONEncoding.default).responseDecodable(of: SupplierModel.self) { response in
               }
+              presentationMode.wrappedValue.dismiss()
+
             })
         }
       }
