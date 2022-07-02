@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+class SupplierCounter: ObservableObject {
+  @Published var counter: Int = 0
+}
+
 struct ContentView: View {
   var body: some View {
     NavigationView {
@@ -19,6 +23,7 @@ struct ContentView: View {
 
       }
     }
+    .environmentObject(SupplierCounter())
   }
 }
 

@@ -20,8 +20,6 @@ struct Suppliers: View {
           ForEach(suppliers, id: \.self) { item in
             NavigationLink(destination: SupplierDetail(id: item.id, companyName: item.companyName, contactName: item.contactName, contactTitle: item.contactTitle)) {
               Text(item.contactName)
-              
-
             }
           }
         }

@@ -41,14 +41,10 @@ struct AddSupplier: View {
               AF.request("https://northwind.vercel.app/api/suppliers", method: .post, parameters: newSupplier, encoding: JSONEncoding.default).responseDecodable(of: SupplierModel.self) { response in
               }
               presentationMode.wrappedValue.dismiss()
-
             })
         }
       }
     }
-    
-    
-    
   }
 }
 

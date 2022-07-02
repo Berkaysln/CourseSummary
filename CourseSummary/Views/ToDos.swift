@@ -18,20 +18,18 @@ struct ToDos: View {
         HStack {
           Image(systemName: item.completed == true ? "circle.fill" : "circle")
                           .foregroundColor(Color("Neon Blue"))
-          
           Text(item.title)
+          
         }.onTapGesture {
             updateItem(item: item)
         }
-        
       }.onAppear() {
         let request = AF.request("https://jsonplaceholder.typicode.com/todos");
         request.responseDecodable(of: [ToDo].self) { response in
           toDo = response.value ?? []
         }
       }
-      .navigationBarTitle(Text("To Do List")
-                          , displayMode: .inline)
+      .navigationBarTitle(Text("To Do List"), displayMode: .inline)
       .toolbar { Text("#\(toDo.count)")
       }
     }
