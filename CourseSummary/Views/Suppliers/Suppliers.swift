@@ -18,8 +18,10 @@ struct Suppliers: View {
       VStack {
         List {
           ForEach(suppliers, id: \.self) { item in
-            NavigationLink(destination: SupplierDetail(id: item.id)) {
+            NavigationLink(destination: SupplierDetail(id: item.id, companyName: item.companyName, contactName: item.contactName, contactTitle: item.contactTitle)) {
               Text(item.contactName)
+              
+
             }
           }
         }
@@ -37,11 +39,7 @@ struct Suppliers: View {
     }
   }
   
-  //  func delete(at indexes: IndexSet) {
-  //    if let first = indexes.first {
-  //      suppliers.remove(at: first)
-  //    }
-  //  }
+
   //  var disableDelete: Bool {
   //      if let mode = editMode?.wrappedValue, mode != .active {
   //          return true
